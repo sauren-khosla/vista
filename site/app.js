@@ -19,6 +19,7 @@ const preview = document.querySelector('.widget-preview');
 preview.addEventListener('click', () => {
   const collapsed = preview.classList.toggle('is-collapsed');
   preview.setAttribute('aria-expanded', String(!collapsed));
+  preview.querySelector('.widget-inner').setAttribute('aria-hidden', String(collapsed));
   preview.setAttribute('aria-label', collapsed ? 'Expand the Vista preview' : 'Try collapsing the Vista preview');
   document.querySelector('.preview-hint').textContent = collapsed ? 'Quietly here. Click to open.' : 'Click to try the tiny version';
 });

@@ -16,8 +16,8 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/OpenSauceSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="assets/fonts/OpenSauceSans-Medium.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -34,21 +34,20 @@
   <section class="hero" aria-labelledby="hero-title">
     <img class="landscape" src="assets/hero.webp" alt="Sunlit green hills, a blue lake, and clouds stretching into the distance." width="3344" height="1882" fetchpriority="high">
     <div class="hero-content">
-      <p class="eyebrow"><span></span> A little room for your eyes</p>
       <h1 id="hero-title">A little distance.<br>A clearer day.</h1>
       <p class="hero-description">Meet Vista. A quiet reminder to look up,<br class="desktop-break"> look far, and come back refreshed.</p>
       <a class="button download" href="https://github.com/sauren-khosla/vista/releases/download/v0.1.0/Vista-0.1.0-universal.dmg" data-download><svg><use href="#apple"/></svg>Download for macOS <svg class="download-arrow"><use href="#arrow"/></svg></a>
       <p class="compatibility">Free & open source <span>·</span> macOS 14+ <span>·</span> Apple silicon & Intel</p>
-      <button class="install-link" type="button" data-install>Preview release · First-launch instructions <span>↗</span></button>
     </div>
     <div class="landscape-caption"><span class="mini-ring"></span><span>A small reminder.<br>A much bigger view.</span></div>
     <div class="preview-area">
-      <div class="preview-caption">A little nudge, right on your desktop <span>↘</span></div>
-      <button class="widget-preview" type="button" aria-expanded="true" aria-label="Try collapsing the Vista preview">
-        <span class="widget-inner"><span class="widget-header">Vista <span class="minus">−</span></span><span class="preview-orb"><i></i></span><span class="widget-label">Time for a break</span><span class="widget-title">Look into the distance.</span><span class="widget-copy">20 feet away. 20 seconds.<br>Blink naturally.</span><span class="widget-action">Start 20-second break <svg><use href="#arrow"/></svg></span></span>
+      <div class="preview-caption">A little nudge, right on your desktop</div>
+      <svg class="preview-arrow" viewBox="0 0 292 334" fill="none" aria-hidden="true"><path d="M184 18C239 18 266 34 266 56m-5-6 5 6 5-6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <button class="widget-preview is-collapsed" type="button" aria-expanded="false" aria-label="Expand the Vista preview">
+        <span class="widget-inner" aria-hidden="true"><span class="widget-header">Vista <span class="minus">−</span></span><span class="preview-orb"><i></i></span><span class="widget-label">Time for a break</span><span class="widget-title">Look into the distance.</span><span class="widget-copy">20 feet away. 20 seconds.<br>Blink naturally.</span><span class="widget-action">Start 20-second break <svg><use href="#arrow"/></svg></span></span>
         <span class="collapsed-orb"><i></i></span>
       </button>
-      <span class="preview-hint">Click to try the tiny version</span>
+      <span class="preview-hint">Click the dot to try Vista</span>
     </div>
   </section>
   <section class="details wrap" aria-labelledby="details-title">

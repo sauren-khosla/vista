@@ -28,7 +28,7 @@
 /* Keep the dot and the growing card on one stationary bottom-right anchor.
    The content has its final width throughout, so it never wraps mid-morph. */
 .preview-area {--card-width:242px;--card-height:258px;width:292px;height:360px;display:block;right:40px;bottom:26px}
-.preview-caption {position:absolute;top:auto;bottom:calc(var(--card-height) + 68px);left:0;font-size:10px;line-height:18px;transition:bottom .52s cubic-bezier(.22,1,.36,1)}
+.preview-caption {position:absolute;top:auto;bottom:calc(var(--card-height) + 34px);left:0;font-size:10px;line-height:18px;transition:bottom .52s cubic-bezier(.22,1,.36,1)}
 .preview-area:has(.is-collapsed) .preview-caption {bottom:120px}
 .preview-arrow {position:absolute;inset:auto 0 38px;width:292px;height:100px;color:white;pointer-events:none;opacity:0;transition:opacity .15s;filter:drop-shadow(0 1px 3px rgb(0 0 0 / 20%))}
 .preview-area:has(.is-collapsed) .preview-arrow {opacity:1;transition-delay:.3s}
@@ -38,7 +38,8 @@
 .widget-preview.is-collapsed .widget-inner {opacity:0;transform:translateY(6px);transition:opacity .1s ease,transform .2s ease;pointer-events:none}
 .collapsed-orb {display:grid;inset:auto;bottom:7px;right:7px;width:36px;height:36px;opacity:0;transform:scale(.7);transition:opacity .1s,transform .15s;pointer-events:none}
 .widget-preview.is-collapsed .collapsed-orb {opacity:1;transform:scale(1);transition:opacity .2s ease .2s,transform .32s cubic-bezier(.22,1,.36,1) .18s}
-.preview-hint {position:absolute;right:0;top:auto;bottom:0;font-size:9px;padding:0;white-space:nowrap}
+.preview-hint {position:absolute;right:0;top:auto;bottom:-10px;font-size:10px;line-height:14px;white-space:nowrap}
+.preview-caption,.preview-hint {padding:4px 9px;border:1px solid rgb(255 255 255 / 22%);border-radius:20px;background:rgb(24 24 24 / 66%);color:#fff;font-weight:500;text-shadow:none;-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);box-shadow:0 2px 8px rgb(0 0 0 / 10%)}
 @media(max-width:1050px){.hero-content{width:min(640px,calc(100% - 48px))}.preview-area{right:24px}}
 @media(max-width:650px){
   .hero{min-height:780px}

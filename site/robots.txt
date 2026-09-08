@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sauren-khosla.github.io/vista/sitemap.xml

@@ -1,0 +1,16 @@
+name: Test Vista
+on:
+  push:
+    branches: [main]
+    paths: ['Sources/**', 'Tests/**', 'Package.swift', '.github/workflows/ci.yml']
+  pull_request:
+    paths: ['Sources/**', 'Tests/**', 'Package.swift', '.github/workflows/ci.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test
+        run: swift test
